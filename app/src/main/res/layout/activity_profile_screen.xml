@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:paddingTop="50dp">
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="55sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="UserId"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="30dp"
+        android:textSize="45sp"
+        android:id="@+id/uidTv"
+        android:textStyle="bold"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch"
+            android:textSize="35sp"
+            android:id="@+id/branch"/>
+
+        <TextView
+            android:id="@+id/sem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="162dp"
+            android:layout_toEndOf="@+id/branch"
+            android:text="Sem"
+            android:textSize="35sp"/>
+
+        <TextView
+            android:id="@+id/branch_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/branch"
+            android:layout_marginTop="45dp"
+            android:text=""
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/sem_tv"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem"
+            android:layout_alignStart="@+id/sem"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="45dp"
+            android:text=""
+            android:textSize="30sp" />
+    </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Press to calculate absolute pointer"
+            android:id="@+id/abspointer"/>
+
+        <Button
+            android:layout_marginLeft="50dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Press to predict ESE marks"
+            android:id="@+id/predictpointer"/>
+
+
+    </LinearLayout>
+</LinearLayout>
